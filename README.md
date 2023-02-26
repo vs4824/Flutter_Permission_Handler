@@ -13,7 +13,8 @@ While the permissions are being requested during runtime, you'll still need to t
 
 There are a number of Permissions. You can get a Permission's status, which is either granted, denied, restricted or permanentlyDenied.
 
-''' var status = await Permission.camera.status;
+''' 
+var status = await Permission.camera.status;
 if (status.isDenied) {
 // We didn't ask for permission yet or the permission has been denied before but not permanently.
 }
@@ -21,4 +22,5 @@ if (status.isDenied) {
 // You can can also directly ask the permission about its status.
 if (await Permission.location.isRestricted) {
 // The OS restricts access, for example because of parental controls.
-} '''
+} 
+'''
